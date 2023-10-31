@@ -1,3 +1,4 @@
+## To create the function to construct the matrix
 makeCacheMatrix <- function(mat0 = matrix()) {  
   inv <- NULL   
   set <- function(cat) { 
@@ -10,7 +11,7 @@ makeCacheMatrix <- function(mat0 = matrix()) {
     getinverse <- function() inv  
     list(set = set, get = get, setinverse = setinverse, getinverse = getinverse) 
 }  
-
+## Function to get cached data
 cacheinverse <- function(mat0, ...) {
   inv <- mat0$getinverse()
   if(!is.null(inv)) {
